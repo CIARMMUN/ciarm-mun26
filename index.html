@@ -159,6 +159,28 @@ section{padding:7rem 0}
 .res-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.8rem}
 .res-tag{font-family:'Share Tech Mono',monospace;font-size:.55rem;letter-spacing:.1em;padding:.2rem .5rem;border-radius:2px;background:rgba(201,168,76,.08);color:var(--gold);border:1px solid rgba(201,168,76,.15)}
 
+/* MUN 4 EVERYONE */
+#mun4everyone{background:var(--bg);position:relative;overflow:hidden}
+#mun4everyone::after{content:'4 ALL';position:absolute;right:-2rem;top:50%;transform:translateY(-50%) rotate(90deg);font-family:'Bebas Neue',cursive;font-size:12rem;color:rgba(201,168,76,.025);pointer-events:none;white-space:nowrap}
+.m4e-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:3rem}
+.m4e-card{border:1px solid rgba(201,168,76,.12);border-radius:4px;padding:2rem 1.8rem;background:rgba(201,168,76,.02);transition:border-color .3s,background .3s,transform .3s;cursor:none;display:flex;flex-direction:column}
+.m4e-card:hover{border-color:rgba(201,168,76,.3);background:rgba(201,168,76,.05);transform:translateY(-4px)}
+.m4e-icon{font-size:2.2rem;margin-bottom:1rem;line-height:1}
+.m4e-title{font-family:'Bebas Neue',cursive;font-size:1.6rem;letter-spacing:.06em;color:var(--white);margin-bottom:.4rem}
+.m4e-desc{font-size:.98rem;color:var(--off);line-height:1.72;font-weight:300;margin-bottom:1.4rem;flex:1}
+.m4e-link{display:inline-flex;align-items:center;gap:.5rem;font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.12em;color:#000;background:var(--gold);padding:.45rem 1rem;border-radius:2px;text-decoration:none;transition:opacity .2s;cursor:none;margin-top:auto}
+.m4e-link:hover{opacity:.85}
+.m4e-link-sec{background:transparent;color:var(--gold);border:1px solid rgba(201,168,76,.3)}
+.m4e-link-sec:hover{background:rgba(201,168,76,.06);opacity:1}
+.m4e-tag{font-family:'Share Tech Mono',monospace;font-size:.55rem;letter-spacing:.1em;padding:.2rem .5rem;border-radius:2px;display:inline-block;margin-bottom:.8rem}
+.m4e-tag-video{background:rgba(255,82,82,.1);color:#FF5252;border:1px solid rgba(255,82,82,.25)}
+.m4e-tag-article{background:rgba(64,196,255,.08);color:#40C4FF;border:1px solid rgba(64,196,255,.25)}
+.m4e-tag-guide{background:rgba(105,240,174,.08);color:#69F0AE;border:1px solid rgba(105,240,174,.25)}
+.m4e-tag-podcast{background:rgba(201,168,76,.08);color:var(--gold);border:1px solid rgba(201,168,76,.25)}
+@media(max-width:900px){
+  .m4e-grid{grid-template-columns:1fr}
+}
+
 /* PRESS */
 #press{background:var(--bg);position:relative;overflow:hidden}
 #press::after{content:'PRESS';position:absolute;right:-2rem;top:50%;transform:translateY(-50%) rotate(90deg);font-family:'Bebas Neue',cursive;font-size:12rem;color:rgba(201,168,76,.025);pointer-events:none;white-space:nowrap}
@@ -323,6 +345,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     <a href="#committees">Committees</a>
     <a href="#register">Register</a>
     <a href="#resources">Resources</a>
+    <a href="#mun4everyone">MUN 4 All</a>
     <a href="#press">Press</a>
     <a href="#secretariat">Secretariat</a>
     <a href="#gallery">Gallery</a>
@@ -338,6 +361,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
   <a href="#committees" onclick="toggleMenu()">Committees</a>
   <a href="#register" onclick="toggleMenu()">Register</a>
   <a href="#resources" onclick="toggleMenu()">Resources</a>
+  <a href="#mun4everyone" onclick="toggleMenu()">MUN 4 All</a>
   <a href="#press" onclick="toggleMenu()">Press</a>
   <a href="#secretariat" onclick="toggleMenu()">Secretariat</a>
   <a href="#gallery" onclick="toggleMenu()">Gallery</a>
@@ -687,6 +711,167 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
 
       </div>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- MUN 4 EVERYONE -->
+<section id="mun4everyone">
+  <div class="container">
+    <div class="section-eyebrow reveal">Open Access</div>
+    <h2 class="section-title reveal">MUN 4<br><span>EVERYONE!</span></h2>
+    <p class="section-lead reveal">Model UN isn't just for delegates — it's for everyone. Explore curated content to understand what MUN is, why it matters, and how to prepare.</p>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ROW 1: FOR PARENTS & FAMILIES              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="reveal" style="display:flex;align-items:center;gap:1rem;margin-top:3rem;margin-bottom:1.5rem">
+      <div style="font-family:'Bebas Neue',cursive;font-size:1.8rem;letter-spacing:.08em;color:var(--white)">For Parents <span style="color:var(--gold)">&amp; Families</span></div>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(201,168,76,.3),transparent)"></div>
+    </div>
+    <p class="reveal" style="font-size:1.05rem;color:var(--off);line-height:1.78;font-weight:300;margin-bottom:1.5rem;max-width:60ch">Understand the value of Model UN for your child. These guides explain the skills students develop — negotiation, empathy, critical thinking — and how the conference works.</p>
+
+    <div class="m4e-grid">
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🇪🇸</div>
+        <span class="m4e-tag m4e-tag-guide">GUIA · ESPANOL</span>
+        <div class="m4e-title">El Laboratorio de Habilidades para la Vida</div>
+        <p class="m4e-desc">Descubre como el MUN desarrolla habilidades clave en tu hijo: negociacion, empatia, pensamiento critico y oratoria. Una guia completa para familias.</p>
+        <a class="m4e-link" href="https://drive.google.com/file/d/1AcJVjJL9wOCWLzNTbYorkaezyYMTQW1s/view?usp=sharing" target="_blank" rel="noopener">📄 Ver Documento</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🇪🇸</div>
+        <span class="m4e-tag m4e-tag-article">INFOGRAFIA · ESPANOL</span>
+        <div class="m4e-title">MUN: Laboratorio de Vida</div>
+        <p class="m4e-desc">Una infografia visual que explica el valor pedagogico del Modelo de Naciones Unidas, los roles de participacion y las habilidades que se desarrollan.</p>
+        <a class="m4e-link" href="https://drive.google.com/file/d/1v1LU7WO26tXTDdZVVtsFsCSDZU3kdo9P/view?usp=sharing" target="_blank" rel="noopener">🖼 Ver Infografia</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🇬🇧</div>
+        <span class="m4e-tag m4e-tag-guide">GUIDE · ENGLISH</span>
+        <div class="m4e-title">The Model UN Life Skills</div>
+        <p class="m4e-desc">Understand how Model UN builds transferable life skills — from personal inquiry to global negotiation. A complete guide for families and educators.</p>
+        <a class="m4e-link" href="https://drive.google.com/file/d/1eBBZRVYMoUpwVydR6EsdxYTY83TWtC4-/view?usp=sharing" target="_blank" rel="noopener">📄 View Document</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🇬🇧</div>
+        <span class="m4e-tag m4e-tag-article">INFOGRAPHIC · ENGLISH</span>
+        <div class="m4e-title">MUN: The Life Skills Lab</div>
+        <p class="m4e-desc">A visual infographic showing how MUN develops negotiation, diplomacy, empathy, and critical thinking — from the 3-step inquiry roadmap to transferable skills.</p>
+        <a class="m4e-link" href="https://drive.google.com/file/d/1EkOLrjT7wVqtltwB64slfupY1C2yZket/view?usp=sharing" target="_blank" rel="noopener">🖼 View Infographic</a>
+      </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ROW 2: FOR DELEGATES & SECRETARIAT         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="reveal" style="display:flex;align-items:center;gap:1rem;margin-top:4rem;margin-bottom:1.5rem">
+      <div style="font-family:'Bebas Neue',cursive;font-size:1.8rem;letter-spacing:.08em;color:var(--white)">For Delegates <span style="color:var(--gold)">&amp; Secretariat</span></div>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(201,168,76,.3),transparent)"></div>
+    </div>
+    <p class="reveal" style="font-size:1.05rem;color:var(--off);line-height:1.78;font-weight:300;margin-bottom:1.5rem;max-width:60ch">Prepare for conference day. Learn how committees work, how to write resolutions, master parliamentary procedure, and research your country's position.</p>
+
+    <div class="m4e-grid">
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">📘</div>
+        <span class="m4e-tag m4e-tag-guide">GUIDE</span>
+        <div class="m4e-title">Beginner Delegate Guide</div>
+        <p class="m4e-desc">New to MUN? Start here. Covers how committees work, what to say, how to vote, and how to write a resolution from scratch.</p>
+        <a class="m4e-link" href="docs/NHSMUNBeginnerDelegateGuide.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">📕</div>
+        <span class="m4e-tag m4e-tag-video">ADVANCED</span>
+        <div class="m4e-title">Advanced Delegate Guide</div>
+        <p class="m4e-desc">Ready to compete for Best Delegate? Learn lobbying strategy, amendment tactics, and how to control the flow of debate.</p>
+        <a class="m4e-link" href="docs/NHSMUNAdvancedDelegateGuide.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">⚖️</div>
+        <span class="m4e-tag m4e-tag-article">PROCEDURE</span>
+        <div class="m4e-title">Rules of Procedure</div>
+        <p class="m4e-desc">Master every motion, point, and parliamentary procedure. Know the rules better than anyone in the room.</p>
+        <a class="m4e-link" href="docs/NHSMUNRulesofProcedureGuide.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🔍</div>
+        <span class="m4e-tag m4e-tag-guide">RESEARCH</span>
+        <div class="m4e-title">Research Your Country</div>
+        <p class="m4e-desc">How to research your country's foreign policy and write a winning position paper. Essential for all delegates.</p>
+        <a class="m4e-link" href="docs/NHSMUNResearchGuide.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">📋</div>
+        <span class="m4e-tag m4e-tag-article">REFERENCE</span>
+        <div class="m4e-title">Points &amp; Motions</div>
+        <p class="m4e-desc">Quick reference sheet for all parliamentary points and motions. Print it and bring it to committee — covers every formal action you can take.</p>
+        <a class="m4e-link" href="docs/Points_and_Motions_complete.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">📖</div>
+        <span class="m4e-tag m4e-tag-guide">VOCABULARY</span>
+        <div class="m4e-title">MUN Glossary &amp; Vocabulary</div>
+        <p class="m4e-desc">Every term you'll hear in committee — from "Placard" to "Preambulatory Clause" — defined clearly. Essential for first-time delegates.</p>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:auto;padding-top:1rem">
+          <a class="m4e-link" href="docs/Model_UN_Glossary.pdf" download>⬇ Glossary</a>
+          <a class="m4e-link m4e-link-sec" href="docs/Model_UN_Vocabulary_complete.pdf" download>⬇ Vocabulary</a>
+        </div>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🚫</div>
+        <span class="m4e-tag m4e-tag-video">IMPORTANT</span>
+        <div class="m4e-title">Forbidden Words in UN Debate</div>
+        <p class="m4e-desc">Words and phrases you should never use in formal Model UN debate. Learn the diplomatic alternatives before conference day.</p>
+        <a class="m4e-link" href="docs/Forbidden_words_in_a_UN_debate_docx.pdf" download>⬇ Download PDF</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🎬</div>
+        <span class="m4e-tag m4e-tag-video">VIDEO</span>
+        <div class="m4e-title">What is Model UN?</div>
+        <p class="m4e-desc">A quick visual introduction to Model United Nations — what it is, how it works, and why students around the world participate.</p>
+        <a class="m4e-link" href="https://www.youtube.com/watch?v=N4Jh7LGOEUI" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🗣️</div>
+        <span class="m4e-tag m4e-tag-video">VIDEO</span>
+        <div class="m4e-title">How to Debate Like a Diplomat</div>
+        <p class="m4e-desc">Master the art of formal debate — from parliamentary procedure to persuasive argumentation. Skills that last a lifetime.</p>
+        <a class="m4e-link" href="https://www.youtube.com/watch?v=xOrgLj9lOwk" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🌐</div>
+        <span class="m4e-tag m4e-tag-article">WEBSITE</span>
+        <div class="m4e-title">The United Nations — Official</div>
+        <p class="m4e-desc">Explore the real UN — the General Assembly, Security Council, and current global initiatives. Know the organization you're simulating.</p>
+        <a class="m4e-link m4e-link-sec" href="https://www.un.org/en/about-us" target="_blank" rel="noopener">🌐 Visit un.org</a>
+      </div>
+
+      <div class="m4e-card reveal">
+        <div class="m4e-icon">🎧</div>
+        <span class="m4e-tag m4e-tag-podcast">LISTEN</span>
+        <div class="m4e-title">UN Audio Hub — Global Issues</div>
+        <p class="m4e-desc">Stay informed about the real-world issues behind our committees — AI, conservation, and international security — through the UN's own audio reports.</p>
+        <a class="m4e-link m4e-link-sec" href="https://news.un.org/en/audio-hub" target="_blank" rel="noopener">🎙 Listen Now</a>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
