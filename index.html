@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Build: 2026-03-09 13:21 — no iframes -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -141,7 +142,7 @@ section{padding:7rem 0}
 .reg-title{font-family:'Bebas Neue',cursive;font-size:2.2rem;letter-spacing:.06em;color:var(--white);margin-bottom:.6rem}
 .reg-desc{font-size:1.05rem;color:var(--off);line-height:1.78;margin-bottom:1.8rem;font-weight:300}
 .reg-deadline{font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.12em;color:var(--dim);margin-bottom:1.4rem;display:flex;align-items:center;gap:.4rem}
-.reg-deadline::before{content:'⏱';font-size:.85rem}
+.reg-deadline::before{content:'';font-size:.85rem}
 
 /* RESOURCES */
 #resources{background:var(--bg2)}
@@ -165,7 +166,7 @@ section{padding:7rem 0}
 .press-info{display:flex;flex-direction:column;gap:1.5rem}
 .press-info p{font-size:1.08rem;color:var(--off);line-height:1.82;font-weight:300}
 .press-perks{display:flex;flex-direction:column;gap:.9rem;margin-top:.5rem}
-.perk{display:flex;align-items:flex-start;gap:.8rem;font-size:1rem;color:var(--off)}
+.perk{display:flex;align-items:flex-start;gap:.4rem;font-size:1rem;color:var(--off)}
 .perk::before{content:'→';color:var(--gold);flex-shrink:0;font-family:'Share Tech Mono',monospace;font-size:.8rem;margin-top:.2rem}
 .press-form-wrap{border:1px solid rgba(201,168,76,.12);border-radius:4px;overflow:hidden}
 .press-form-header{background:rgba(201,168,76,.06);border-bottom:1px solid rgba(201,168,76,.1);padding:1rem 1.4rem;display:flex;align-items:center;gap:.7rem}
@@ -179,8 +180,7 @@ section{padding:7rem 0}
 .sec-join{background:rgba(201,168,76,.03);border:1px solid rgba(201,168,76,.12);border-radius:4px;padding:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;margin-top:2rem}
 .sec-join-text h3{font-family:'Bebas Neue',cursive;font-size:2.2rem;color:var(--white);margin-bottom:.6rem;letter-spacing:.06em}
 .sec-join-text p{font-size:1.05rem;color:var(--off);line-height:1.78;font-weight:300}
-.sec-join-form{border:1px solid rgba(201,168,76,.1);border-radius:3px;overflow:hidden;background:#fff}
-.sec-join-form iframe{width:100%;height:480px;border:none;display:block}
+
 .sec-roles{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
 .role-card{border:1px solid #1a1a1a;border-radius:2px;padding:1.6rem 1.3rem;text-align:center;background:var(--bg2);transition:border-color .25s}
 .role-card:hover{border-color:rgba(201,168,76,.2)}
@@ -267,8 +267,6 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
   /* secretaria roles */
   .sec-roles{grid-template-columns:1fr 1fr}
   .sec-join{padding:1.8rem 1.2rem}
-  /* press form */
-  .press-form-wrap iframe,.sec-join-form iframe{height:580px}
   /* footer */
   .footer-inner{grid-template-columns:1fr;gap:2rem}
   .footer-bottom{flex-direction:column;gap:.6rem;text-align:center}
@@ -326,7 +324,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     <a href="#register">Register</a>
     <a href="#resources">Resources</a>
     <a href="#press">Press</a>
-    <a href="#secretaria">Secretaría</a>
+    <a href="#secretariat">Secretariat</a>
     <a href="#gallery">Gallery</a>
   </div>
   <a class="nav-cta" href="#register">APPLY NOW</a>
@@ -341,7 +339,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
   <a href="#register" onclick="toggleMenu()">Register</a>
   <a href="#resources" onclick="toggleMenu()">Resources</a>
   <a href="#press" onclick="toggleMenu()">Press</a>
-  <a href="#secretaria" onclick="toggleMenu()">Secretaría</a>
+  <a href="#secretariat" onclick="toggleMenu()">Secretariat</a>
   <a href="#gallery" onclick="toggleMenu()">Gallery</a>
   <a href="#register" class="btn-primary" onclick="toggleMenu()" style="margin-top:1rem">APPLY NOW</a>
 </div>
@@ -388,7 +386,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     <h2 class="section-title reveal">THE WORLD<br><span>STARTS HERE</span></h2>
     <div class="about-grid">
       <div class="about-img reveal">
-        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=75&fit=crop" alt="Model UN delegates">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=75&fit=crop" alt="Model UN delegates" referrerpolicy="no-referrer">
         <div class="about-img-frame"></div>
         <div class="about-img-label">CIARM MUN 2026 · 1st Edition</div>
       </div>
@@ -417,30 +415,30 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     <p class="section-lead reveal">Each committee tackles a different global crisis. Research your country, prepare your speeches, negotiate your resolutions.</p>
     <div class="comm-grid">
       <div class="comm-card reveal" data-c="HLAB-AI">
-        <img class="comm-photo" loading="eager" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=70&fit=crop&auto=format" alt="HLAB-AI">
+        <img class="comm-photo" referrerpolicy="no-referrer" crossorigin="anonymous" loading="eager" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop" alt="HLAB-AI" referrerpolicy="no-referrer">
         <div class="comm-overlay"></div>
         <div class="comm-hover-info"><p>12 countries · All levels welcome.<br>Debate the future of AI-powered learning.</p></div>
-        <div class="comm-body">
+        <div class="comm-body"><button onclick="event.stopPropagation();openIntro('HLAB-AI')" style="position:absolute;top:1rem;right:1rem;z-index:10;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.1em;padding:.35rem .7rem;border-radius:2px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(0,0,0,.6)'">▶ INTRO</button>
           <div class="comm-badge">HLAB-AI</div>
           <div class="comm-name">High-Level Advisory Body on Artificial Intelligence</div>
           <span class="comm-topic">AI and the Future of Education</span>
         </div>
       </div>
       <div class="comm-card reveal" data-c="CMS">
-        <img class="comm-photo" loading="eager" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=70&fit=crop&auto=format" alt="CMS">
+        <img class="comm-photo" referrerpolicy="no-referrer" crossorigin="anonymous" loading="eager" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&fit=crop" alt="CMS" referrerpolicy="no-referrer">
         <div class="comm-overlay"></div>
         <div class="comm-hover-info"><p>12 countries · Conservation meets international law.<br>Protect the world's most overlooked mammals.</p></div>
-        <div class="comm-body">
+        <div class="comm-body"><button onclick="event.stopPropagation();openIntro('CMS')" style="position:absolute;top:1rem;right:1rem;z-index:10;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.1em;padding:.35rem .7rem;border-radius:2px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(0,0,0,.6)'">▶ INTRO</button>
           <div class="comm-badge">CMS</div>
           <div class="comm-name">Convention on Migratory Species</div>
           <span class="comm-topic">Conservation of Migratory Bat Species</span>
         </div>
       </div>
       <div class="comm-card reveal" data-c="DISEC">
-        <img class="comm-photo" loading="eager" src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=70&fit=crop&auto=format" alt="DISEC">
+        <img class="comm-photo" referrerpolicy="no-referrer" crossorigin="anonymous" loading="eager" src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80&fit=crop" alt="DISEC" referrerpolicy="no-referrer">
         <div class="comm-overlay"></div>
         <div class="comm-hover-info"><p>12 countries · The most contested security issue.<br>Who will govern the skies?</p></div>
-        <div class="comm-body">
+        <div class="comm-body"><button onclick="event.stopPropagation();openIntro('DISEC')" style="position:absolute;top:1rem;right:1rem;z-index:10;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.25);color:#fff;font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.1em;padding:.35rem .7rem;border-radius:2px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(0,0,0,.6)'">▶ INTRO</button>
           <div class="comm-badge">DISEC</div>
           <div class="comm-name">Disarmament & International Security</div>
           <span class="comm-topic">Proliferation of Small Drone Warfare</span>
@@ -458,20 +456,56 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     <div class="section-eyebrow reveal">Applications Open</div>
     <h2 class="section-title reveal">TAKE YOUR<br><span>SEAT</span></h2>
     <p class="section-lead reveal">We are currently accepting applications. Spots are limited — apply early to secure your committee placement.</p>
-    <div class="reg-grid reveal">
-      <div class="reg-card">
-        <div class="reg-icon">🌍</div>
-        <div class="reg-title">Delegate Registration</div>
-        <p class="reg-desc">Represent a country in one of three committees. No prior MUN experience required. Submit your preferences and we'll confirm your placement.</p>
-        <div class="reg-deadline">Deadline: June 1, 2026</div>
-        <a class="btn-primary" href="https://forms.gle/c9w5K3WQPQAf2xBc9" target="_blank" rel="noopener">Apply as Delegate →</a>
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:3rem">
+
+      <!-- LEFT: Delegates photo + card -->
+      <div style="display:flex;flex-direction:column;gap:1.5rem">
+        <div style="position:relative;border-radius:4px;overflow:hidden;aspect-ratio:16/9">
+          <img
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80&fit=crop"
+            alt="Delegates in session"
+            referrerpolicy="no-referrer"
+            style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"
+          >
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,6,5,.75) 0%,transparent 60%)"></div>
+          <div style="position:absolute;bottom:1rem;left:1.2rem">
+            <div style="font-family:'Bebas Neue',cursive;font-size:1.2rem;letter-spacing:.1em;color:#C9A84C">Delegates</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.55rem;letter-spacing:.15em;color:rgba(255,255,255,.55)">3 Committees · 36 Countries</div>
+          </div>
+        </div>
+        <div class="reg-card">
+          <div class="reg-icon" style="font-family:'Bebas Neue',cursive;font-size:1.1rem;letter-spacing:.2em;color:var(--gold)">DELEGATE</div>
+          <div class="reg-title">Delegate Registration</div>
+          <p class="reg-desc">Represent a country in one of three committees. No prior MUN experience required — just curiosity and the will to debate.</p>
+          <div class="reg-deadline">Deadline: June 1, 2026</div>
+          <a class="btn-primary" href="https://forms.gle/c9w5K3WQPQAf2xBc9" target="_blank" rel="noopener" style="text-align:center;display:block;cursor:none">Apply as Delegate →</a>
+        </div>
       </div>
-      <div class="reg-card" style="opacity:.75">
-        <div class="reg-icon">📰</div>
-        <div class="reg-title">Press Delegation</div>
-        <p class="reg-desc">Reserved exclusively for <strong style="color:var(--white)">5th Grade Primary students</strong>. This role is assigned internally — not open to general registration.</p>
-        <div style="font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.12em;color:var(--gold);padding:.5rem .8rem;border:1px solid rgba(201,168,76,.2);border-radius:2px;display:inline-block">BY INTERNAL ASSIGNMENT ONLY</div>
+
+      <!-- RIGHT: Press card (internal only) -->
+      <div style="display:flex;flex-direction:column;gap:1.5rem">
+        <div style="position:relative;border-radius:4px;overflow:hidden;aspect-ratio:16/9">
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80&fit=crop"
+            alt="Conference press delegation"
+            referrerpolicy="no-referrer"
+            style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"
+          >
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,6,5,.75) 0%,transparent 60%)"></div>
+          <div style="position:absolute;bottom:1rem;left:1.2rem">
+            <div style="font-family:'Bebas Neue',cursive;font-size:1.2rem;letter-spacing:.1em;color:#C9A84C">Press</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.55rem;letter-spacing:.15em;color:rgba(255,255,255,.55)">5th Grade Primary · Internal Only</div>
+          </div>
+        </div>
+        <div class="reg-card" style="opacity:.8">
+          <div class="reg-icon" style="font-family:'Bebas Neue',cursive;font-size:1.1rem;letter-spacing:.2em;color:var(--gold)">PRESS</div>
+          <div class="reg-title">Press Delegation</div>
+          <p class="reg-desc">Reserved exclusively for <strong style="color:var(--white)">5th Grade Primary students</strong>. This role is assigned internally — not open to general registration.</p>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.12em;color:var(--gold);padding:.5rem .8rem;border:1px solid rgba(201,168,76,.2);border-radius:2px;display:inline-block">BY INTERNAL ASSIGNMENT ONLY</div>
+        </div>
       </div>
+
+    </div>
     </div>
   </div>
 </section>
@@ -541,6 +575,118 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
       </div>
 
     </div>
+
+  <!-- ACKNOWLEDGEMENT -->
+  <div class="reveal" style="margin-top:5rem;position:relative">
+
+    <!-- top label -->
+    <div style="display:flex;align-items:center;gap:1.2rem;margin-bottom:2rem">
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.25))"></div>
+      <span style="font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase">With Special Thanks To</span>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(201,168,76,.25),transparent)"></div>
+    </div>
+
+    <!-- main card -->
+    <div style="
+      position:relative;overflow:hidden;border-radius:4px;
+      border:1px solid rgba(201,168,76,.12);
+      background:linear-gradient(135deg,rgba(201,168,76,.03) 0%,rgba(0,0,0,0) 60%);
+      padding:3rem 3.5rem;
+      display:grid;grid-template-columns:1fr 280px;gap:4rem;align-items:center;
+    ">
+
+      <!-- background huge watermark text -->
+      <div style="
+        position:absolute;right:-1rem;top:50%;transform:translateY(-50%);
+        font-family:'Bebas Neue',cursive;font-size:11rem;letter-spacing:-.02em;
+        color:rgba(201,168,76,.04);line-height:1;pointer-events:none;user-select:none;
+        white-space:nowrap;
+      ">NHSMUN</div>
+
+      <!-- LEFT: text -->
+      <div style="position:relative;z-index:2">
+        <div style="display:flex;align-items:center;gap:.9rem;margin-bottom:1.5rem">
+          <div style="width:2px;height:3rem;background:linear-gradient(180deg,#C9A84C,transparent)"></div>
+          <div>
+            <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:.08em;color:var(--white);line-height:1">
+              Inspired by Excellence
+            </div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.2em;color:var(--gold);margin-top:.2rem">
+              NHSMUN · National High School Model United Nations
+            </div>
+          </div>
+        </div>
+
+        <p style="font-family:'Crimson Pro',serif;font-size:1.15rem;font-weight:300;color:var(--off);line-height:1.85;max-width:54ch">
+          CIARM MUN 2026 stands on the shoulders of giants. We extend our deepest gratitude to
+          <a href="https://www.nhsmun.nyc" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4);padding-bottom:1px;cursor:none">NHSMUN</a>
+          for generously allowing us to build upon their world-class background guides and committee frameworks —
+          resources that have shaped the preparation of our delegates and elevated the standard of this conference.
+        </p>
+
+        <div style="display:flex;gap:2rem;margin-top:2rem">
+          <div style="border-left:1px solid rgba(201,168,76,.2);padding-left:1rem">
+            <div style="font-family:'Bebas Neue',cursive;font-size:1.6rem;color:var(--gold);line-height:1">3</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;letter-spacing:.15em;color:var(--dim)">Guides Used</div>
+          </div>
+          <div style="border-left:1px solid rgba(201,168,76,.2);padding-left:1rem">
+            <div style="font-family:'Bebas Neue',cursive;font-size:1.6rem;color:var(--gold);line-height:1">36</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;letter-spacing:.15em;color:var(--dim)">Countries Inspired</div>
+          </div>
+          <div style="border-left:1px solid rgba(201,168,76,.2);padding-left:1rem">
+            <div style="font-family:'Bebas Neue',cursive;font-size:1.6rem;color:var(--gold);line-height:1">1st</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;letter-spacing:.15em;color:var(--dim)">Edition</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: NHSMUN badge -->
+      <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+
+        <!-- globe SVG -->
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:.85">
+          <circle cx="55" cy="55" r="48" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+          <!-- latitude lines -->
+          <ellipse cx="55" cy="55" rx="48" ry="18" stroke="rgba(201,168,76,.35)" stroke-width="1" fill="none"/>
+          <ellipse cx="55" cy="55" rx="48" ry="34" stroke="rgba(201,168,76,.2)" stroke-width="1" fill="none"/>
+          <!-- longitude lines -->
+          <ellipse cx="55" cy="55" rx="22" ry="48" stroke="rgba(201,168,76,.35)" stroke-width="1" fill="none"/>
+          <ellipse cx="55" cy="55" rx="40" ry="48" stroke="rgba(201,168,76,.2)" stroke-width="1" fill="none"/>
+          <!-- vertical / horizontal axis -->
+          <line x1="55" y1="7" x2="55" y2="103" stroke="rgba(201,168,76,.3)" stroke-width="1"/>
+          <line x1="7" y1="55" x2="103" y2="55" stroke="rgba(201,168,76,.3)" stroke-width="1"/>
+          <!-- laurel arc hints -->
+          <path d="M20 55 Q18 35 30 22" stroke="rgba(201,168,76,.5)" stroke-width="1.2" fill="none"/>
+          <path d="M90 55 Q92 35 80 22" stroke="rgba(201,168,76,.5)" stroke-width="1.2" fill="none"/>
+          <!-- center dot -->
+          <circle cx="55" cy="55" r="3" fill="#C9A84C" opacity=".6"/>
+        </svg>
+
+        <!-- NHSMUN wordmark -->
+        <div style="text-align:center">
+          <div style="
+            font-family:'Bebas Neue',cursive;
+            font-size:3rem;letter-spacing:.05em;
+            color:var(--white);line-height:1;
+          ">NHS<span style="color:#C9A84C">MUN</span></div>
+          <div style="
+            font-family:'Share Tech Mono',monospace;
+            font-size:.58rem;letter-spacing:.15em;
+            color:var(--dim);margin-top:.3rem;line-height:1.6;
+          ">National High School<br>Model United Nations</div>
+          <a href="https://www.nhsmun.nyc" target="_blank" style="
+            display:inline-block;margin-top:1rem;
+            font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.15em;
+            color:var(--gold);text-decoration:none;
+            border:1px solid rgba(201,168,76,.25);padding:.35rem .9rem;border-radius:2px;
+            cursor:none;transition:background .2s;
+          " onmouseover="this.style.background='rgba(201,168,76,.08)'" onmouseout="this.style.background='transparent'">
+            nhsmun.nyc →
+          </a>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
@@ -564,12 +710,12 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
           <div class="perk">Official press credential and accreditation</div>
         </div>
         <div style="margin-top:1.2rem;padding:.9rem 1.2rem;border:1px solid rgba(201,168,76,.2);border-radius:3px;background:rgba(201,168,76,.04)">
-          <p style="font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.12em;color:var(--gold)">⚠ RESERVED ROLE</p>
+          <p style="font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.12em;color:var(--gold)">! RESERVED ROLE</p>
           <p style="font-size:.98rem;color:var(--off);margin-top:.4rem;line-height:1.7">This delegation is by internal assignment only. 5th grade students will be contacted directly by their teacher.</p>
         </div>
       </div>
       <div class="press-form-wrap reveal" style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:320px;padding:3rem 2rem;text-align:center;gap:1.5rem">
-        <div style="font-size:3.5rem">📰</div>
+        <div style="font-family:'Bebas Neue',cursive;font-size:1rem;letter-spacing:.25em;color:var(--gold);margin-bottom:.3rem">PRESS</div>
         <div style="font-family:'Bebas Neue',cursive;font-size:2.2rem;letter-spacing:.08em;color:var(--white)">5TH GRADE PRIMARY</div>
         <p style="font-size:1.05rem;color:var(--off);line-height:1.75;max-width:32ch">This role is exclusively for 5th Grade Primary students. Applications are handled internally through your classroom teacher.</p>
         <div style="font-family:'Share Tech Mono',monospace;font-size:.68rem;letter-spacing:.18em;color:var(--gold);padding:.6rem 1.2rem;border:1px solid rgba(201,168,76,.25);border-radius:2px">NOT OPEN TO PUBLIC REGISTRATION</div>
@@ -581,28 +727,54 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
 <div class="divider"></div>
 
 <!-- SECRETARIA -->
-<section id="secretaria">
+<section id="secretariat">
   <div class="container">
     <div class="sec-hero">
-      <div class="section-eyebrow reveal">Secretaría</div>
+      <div class="section-eyebrow reveal">Secretariat</div>
       <h2 class="section-title reveal">JOIN THE<br><span>TEAM</span></h2>
       <p class="section-lead reveal" style="text-align:center;margin:0 auto">The secretariat is the backbone of CIARM MUN. These are the students who make the conference run. We are currently recruiting for all positions.</p>
     </div>
     <div class="sec-roles reveal">
-      <div class="role-card"><div class="role-icon">⚖️</div><div class="role-title">Committee Chair</div><p class="role-desc">Lead a committee session, maintain order, and guide delegates toward resolution.</p></div>
-      <div class="role-card"><div class="role-icon">📋</div><div class="role-title">Director</div><p class="role-desc">Support the chair, manage the speakers list, and assist with procedural matters.</p></div>
-      <div class="role-card"><div class="role-icon">🎙️</div><div class="role-title">Secretary-General</div><p class="role-desc">Lead the entire secretariat and represent the conference with vision and authority.</p></div>
-      <div class="role-card"><div class="role-icon">📡</div><div class="role-title">Press Officer</div><p class="role-desc">Coordinate the press delegation and manage the gazette and communications.</p></div>
+      <div class="role-card"><div class="role-title">Committee Chair</div><p class="role-desc">Lead a committee session, maintain order, and guide delegates toward resolution.</p></div>
+      <div class="role-card"><div class="role-title">Director</div><p class="role-desc">Support the chair, manage the speakers list, and assist with procedural matters.</p></div>
+      <div class="role-card"><div class="role-title">Secretary-General</div><p class="role-desc">Lead the entire secretariat and represent the conference with vision and authority.</p></div>
+      <div class="role-card"><div class="role-title">Press Officer</div><p class="role-desc">Coordinate the press delegation and manage the gazette and communications.</p></div>
     </div>
-    <div class="sec-join reveal">
-      <div class="sec-join-text">
-        <h3>Applications Open</h3>
-        <p>We are looking for motivated, organized students who want to help shape CIARM MUN's first edition. Apply using the form — tell us your strengths, your experience, and which role excites you most.</p>
-        <br>
-        <a class="btn-primary" href="https://forms.gle/JeUkfQzHPShscbFp8" target="_blank" rel="noopener">Apply to Secretariat →</a>
+    <div class="sec-join reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:3rem">
+      <!-- Left: photo of secretariat/delegates -->
+      <div style="position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/3">
+        <img
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80&fit=crop"
+          alt="Secretariat team"
+          referrerpolicy="no-referrer"
+          style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.85)"
+        >
+        <!-- gradient overlay -->
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,6,5,.6) 0%,transparent 60%)"></div>
+        <!-- label -->
+        <div style="position:absolute;bottom:1.2rem;left:1.4rem">
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:rgba(255,255,255,.6)">CIARM MUN 2026</div>
+          <div style="font-family:'Bebas Neue',cursive;font-size:1.4rem;letter-spacing:.1em;color:#C9A84C;line-height:1">Secretariat</div>
+        </div>
       </div>
-      <div class="sec-join-form">
-        <iframe src="https://forms.gle/JeUkfQzHPShscbFp8" title="Secretariat Application" loading="lazy"></iframe>
+
+      <!-- Right: text + button -->
+      <div style="display:flex;flex-direction:column;gap:1.5rem">
+        <div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.25em;color:var(--gold);margin-bottom:.6rem">Applications Open</div>
+          <h3 style="font-family:'Bebas Neue',cursive;font-size:2.2rem;letter-spacing:.06em;color:var(--white);line-height:1.1">Shape the<br><span style="color:#C9A84C">Conference</span></h3>
+        </div>
+        <p style="font-family:'Crimson Pro',serif;font-size:1.1rem;font-weight:300;color:var(--off);line-height:1.8">
+          The secretariat is the team that brings CIARM MUN to life. We are looking for motivated, organized students who want to help shape our first edition — from chairing committees to leading the whole conference.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:.8rem">
+          <a class="btn-primary" href="https://forms.gle/JeUkfQzHPShscbFp8" target="_blank" rel="noopener" style="text-align:center;cursor:none">
+            Apply to Secretariat →
+          </a>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.15em;color:var(--dim);text-align:center">
+            Tell us your strengths, experience, and which role excites you most
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -619,20 +791,20 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
   </div>
   <div class="gal-track-wrap">
     <div class="gal-track">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1560523159-6b681a1e1852?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=65&fit=crop" alt="">
-      <img class="gal-img" src="https://images.unsplash.com/photo-1560523159-6b681a1e1852?w=400&q=65&fit=crop" alt="">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1560523159-6b681a1e1852?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
+      <img class="gal-img" src="https://images.unsplash.com/photo-1560523159-6b681a1e1852?w=400&q=65&fit=crop" alt="" referrerpolicy="no-referrer">
     </div>
   </div>
 </section>
@@ -658,7 +830,7 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
         <h4>Resources</h4>
         <a href="#resources">Delegate Guides</a>
         <a href="#press">Press Delegation</a>
-        <a href="#secretaria">Join Secretariat</a>
+        <a href="#secretariat">Join Secretariat</a>
         <a href="https://forms.gle/c9w5K3WQPQAf2xBc9" target="_blank">Apply Now</a>
       </div>
     </div>
@@ -668,6 +840,77 @@ footer{background:#000;border-top:1px solid rgba(201,168,76,.08);padding:4rem 0 
     </div>
   </div>
 </footer>
+
+<!-- ── COMMITTEE INTRO MODAL ──────────────────────────────────────────── -->
+<div id="introModal" style="display:none;position:fixed;inset:0;z-index:500;background:#000;flex-direction:column">
+
+  <!-- slides layer -->
+  <div id="introSlides" style="position:absolute;inset:0"></div>
+
+  <!-- dark overlay -->
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.55) 100%);pointer-events:none;z-index:1"></div>
+
+  <!-- CNN-style top bar -->
+  <div id="introTopBar" style="position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:stretch;height:48px">
+    <div id="introLiveDot" style="display:flex;align-items:center;gap:.5rem;padding:0 1.2rem;font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.18em;color:#fff">
+      <span id="introLivePulse" style="width:8px;height:8px;border-radius:50%;background:#e03030;display:inline-block;animation:livePulse 1s ease-in-out infinite"></span>
+      LIVE
+    </div>
+    <div id="introBrand" style="display:flex;align-items:center;padding:0 1.2rem;font-family:'Bebas Neue',cursive;font-size:1.1rem;letter-spacing:.15em;color:#fff;border-left:1px solid rgba(255,255,255,.15)">CIARM MUN 2026</div>
+    <div style="flex:1"></div>
+    <div id="introDate" style="display:flex;align-items:center;padding:0 1.2rem;font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.12em;color:rgba(255,255,255,.6);border-left:1px solid rgba(255,255,255,.1)">JUNE 10, 2026 · RIVIERA MAYA</div>
+    <!-- close btn -->
+    <button onclick="closeIntro()" style="background:rgba(255,255,255,.08);border:none;border-left:1px solid rgba(255,255,255,.1);color:#fff;font-size:1rem;padding:0 1.2rem;cursor:pointer;font-family:monospace;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.18)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">✕ CLOSE</button>
+  </div>
+
+  <!-- committee color bar below top bar -->
+  <div id="introColorBar" style="position:absolute;top:48px;left:0;right:0;height:3px;z-index:10"></div>
+
+  <!-- progress bar -->
+  <div style="position:absolute;top:51px;left:0;right:0;height:2px;background:rgba(255,255,255,.1);z-index:10">
+    <div id="introProgress" style="height:100%;width:0%;background:rgba(255,255,255,.5);transition:width .4s linear"></div>
+  </div>
+
+  <!-- main content -->
+  <div style="position:absolute;bottom:0;left:0;right:0;z-index:5;padding:2.5rem 3rem 2.5rem">
+
+    <!-- ticker bottom -->
+    <div id="introTicker" style="position:absolute;bottom:0;left:0;right:0;height:36px;display:flex;align-items:center;overflow:hidden">
+      <div id="introTickerTag" style="font-family:'Bebas Neue',cursive;font-size:.95rem;letter-spacing:.15em;color:#fff;padding:0 1rem;height:100%;display:flex;align-items:center;white-space:nowrap;flex-shrink:0;position:sticky;left:0;z-index:2;background:inherit"></div>
+      <div id="introTickerScroll" style="font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:.06em;white-space:nowrap;padding-left:2rem;color:rgba(255,255,255,.9);animation:tickerAnim 40s linear infinite"></div>
+    </div>
+
+    <!-- committee badge -->
+    <div id="introBadge" style="font-family:'Bebas Neue',cursive;font-size:clamp(1rem,2vw,1.3rem);letter-spacing:.22em;margin-bottom:.5rem;opacity:.9"></div>
+
+    <!-- teleprompter text -->
+    <div id="introTeleText" style="font-family:'Crimson Pro',Georgia,serif;font-size:clamp(1.4rem,3.5vw,2.4rem);font-weight:300;color:#fff;line-height:1.55;max-width:72ch;min-height:4em"></div>
+
+    <!-- subtitle / speaker label -->
+    <div id="introSpeaker" style="font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.18em;color:rgba(255,255,255,.55);margin-top:.8rem;display:flex;align-items:center;gap:.7rem">
+      <span style="display:inline-block;width:18px;height:1px;background:currentColor"></span>
+      <span id="introSpeakerName"></span>
+    </div>
+  </div>
+
+  <!-- slide dots -->
+  <div id="introDots" style="position:absolute;top:50%;right:1.5rem;transform:translateY(-50%);z-index:10;display:flex;flex-direction:column;gap:.5rem"></div>
+
+  <!-- mute btn -->
+  <button id="introMuteBtn" onclick="toggleIntroMute()" style="position:absolute;bottom:50px;right:1.5rem;z-index:10;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:'Share Tech Mono',monospace;font-size:.62rem;letter-spacing:.1em;padding:.4rem .8rem;border-radius:2px;cursor:pointer">AUDIO</button>
+
+</div>
+
+<style>
+@keyframes livePulse{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes tickerAnim{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes slideKen{from{transform:scale(1)}to{transform:scale(1.06)}}
+.intro-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s ease;animation:slideKen 8s ease-in-out forwards}
+.intro-slide.active{opacity:1}
+.intro-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);transition:background .3s,transform .3s;cursor:pointer}
+.intro-dot.active{background:#fff;transform:scale(1.4)}
+</style>
+
 
 <script>
 // ── CURSOR ──────────────────────────────────────────────
@@ -804,6 +1047,234 @@ function toggleMusic(){
 function setVol(v){
   if(masterGain)masterGain.gain.setValueAtTime(parseFloat(v),actx.currentTime);
 }
+
+// ── COMMITTEE INTRO DATA ─────────────────────────────────────────────────
+const introData = {
+  'HLAB-AI': {
+    color: '#40C4FF',
+    tickerBg: '#0a2a40',
+    badge: 'HIGH-LEVEL ADVISORY BODY ON AI',
+    speaker: 'CIARM MUN 2026 · Committee on Artificial Intelligence & Education',
+    ticker: 'BREAKING: CIARM MUN 2026 opens HLAB-AI committee · Delegates to debate the future of AI in classrooms worldwide · 12 nations represented · June 10, Riviera Maya · BREAKING: CIARM MUN 2026 opens HLAB-AI committee · Delegates to debate AI in education ·',
+    slides: [
+      'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=75&fit=crop&auto=format',
+    ],
+    script: [
+      "The world stands at a crossroads. Artificial intelligence is no longer the future — it is the present, reshaping classrooms from Shanghai to São Paulo.",
+      "For the first time in history, a generation of students is learning alongside machines. But who decides how? Who sets the rules? Who protects the learners?",
+      "Twelve nations. One table. The High-Level Advisory Body on Artificial Intelligence convenes to answer the defining question of our era:",
+      "How do we harness the power of AI to educate the world — without losing what makes us human?"
+    ]
+  },
+  'CMS': {
+    color: '#69F0AE',
+    tickerBg: '#0a2a15',
+    badge: 'CONVENTION ON MIGRATORY SPECIES',
+    speaker: 'CIARM MUN 2026 · Committee on Conservation & Migratory Species',
+    ticker: 'BREAKING: CMS committee convenes on migratory bat conservation · Over 1,400 bat species face habitat loss · Critical pollinators and pest controllers at risk · June 10, Riviera Maya · BREAKING: CMS committee convenes ·',
+    slides: [
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1600&q=75&fit=crop&auto=format',
+    ],
+    script: [
+      "Every night, across every continent, billions of bats take flight. They pollinate crops, control insects, and sustain ecosystems that feed humanity.",
+      "Yet they are vanishing. Disease, habitat destruction, and climate change are decimating populations that have existed for fifty million years.",
+      "The Convention on Migratory Species brings together twelve nations to confront a silent crisis most of the world has not yet noticed.",
+      "What will it take to save the architects of our ecosystem — before it is too late?"
+    ]
+  },
+  'DISEC': {
+    color: '#FF5252',
+    tickerBg: '#2a0a0a',
+    badge: 'DISARMAMENT & INTERNATIONAL SECURITY',
+    speaker: 'CIARM MUN 2026 · Disarmament & International Security Committee',
+    ticker: 'BREAKING: DISEC convenes on drone warfare proliferation · Small drones deployed in 50+ conflicts globally · International regulation framework absent · June 10, Riviera Maya · BREAKING: DISEC opens on drone warfare ·',
+    slides: [
+      'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1600&q=75&fit=crop&auto=format',
+      'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1600&q=75&fit=crop&auto=format',
+    ],
+    script: [
+      "They weigh less than a kilogram. They cost less than a smartphone. And they have changed the nature of warfare forever.",
+      "Small drones are now deployed in more than fifty active conflicts. They require no pilot. They leave no footprints. And the laws governing them barely exist.",
+      "The Disarmament and International Security Committee convenes twelve of the world's most powerful nations to confront a technology that no border can stop.",
+      "Can diplomacy move faster than the drone? The answer will be decided in this room."
+    ]
+  }
+};
+
+let introComm = null, introSlideIdx = 0, introSentIdx = 0;
+let introSlideTimer = null, introTypeTimer = null, introProgressTimer = null;
+let introMuted = false, introUtterance = null;
+const SLIDE_DUR = 7000;
+
+function openIntro(code) {
+  const d = introData[code];
+  if (!d) return;
+  introComm = code;
+  introSlideIdx = 0;
+  introSentIdx = 0;
+
+  const modal = document.getElementById('introModal');
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  // color bar
+  document.getElementById('introColorBar').style.background = d.color;
+  // ticker
+  document.getElementById('introTickerTag').style.background = d.color;
+  document.getElementById('introTickerTag').style.color = '#000';
+  document.getElementById('introTickerTag').textContent = '● BREAKING NEWS';
+  document.getElementById('introTicker').style.background = d.tickerBg;
+  const scroll = document.getElementById('introTickerScroll');
+  scroll.textContent = d.ticker + ' ' + d.ticker;
+  // badge
+  document.getElementById('introBadge').style.color = d.color;
+  document.getElementById('introBadge').textContent = d.badge;
+  // speaker
+  document.getElementById('introSpeakerName').textContent = d.speaker;
+  // clear text
+  document.getElementById('introTeleText').textContent = '';
+
+  // build slides
+  const slidesEl = document.getElementById('introSlides');
+  slidesEl.innerHTML = '';
+  d.slides.forEach((url, i) => {
+    const s = document.createElement('div');
+    s.className = 'intro-slide' + (i === 0 ? ' active' : '');
+    s.style.backgroundImage = 'url(' + url + ')';
+    s.dataset.idx = i;
+    slidesEl.appendChild(s);
+  });
+
+  // build dots
+  const dots = document.getElementById('introDots');
+  dots.innerHTML = '';
+  d.slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'intro-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goToSlide(i);
+    dots.appendChild(dot);
+  });
+
+  // reset progress
+  document.getElementById('introProgress').style.width = '0%';
+
+  // start
+  startIntroSlides();
+  startIntroTeleprompter();
+  startIntroProgress();
+}
+
+function closeIntro() {
+  clearTimeout(introSlideTimer);
+  clearTimeout(introTypeTimer);
+  clearTimeout(introProgressTimer);
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  document.getElementById('introModal').style.display = 'none';
+  document.body.style.overflow = '';
+  introComm = null;
+}
+
+function goToSlide(idx) {
+  const d = introData[introComm];
+  if (!d) return;
+  introSlideIdx = idx;
+  document.querySelectorAll('.intro-slide').forEach((s, i) => {
+    s.classList.toggle('active', i === idx);
+    if (i === idx) { s.style.animation = 'none'; void s.offsetWidth; s.style.animation = 'slideKen 8s ease-in-out forwards'; }
+  });
+  document.querySelectorAll('.intro-dot').forEach((dot, i) => dot.classList.toggle('active', i === idx));
+  clearTimeout(introSlideTimer);
+  introSlideTimer = setTimeout(nextSlide, SLIDE_DUR);
+}
+
+function nextSlide() {
+  const d = introData[introComm];
+  if (!d) return;
+  introSlideIdx = (introSlideIdx + 1) % d.slides.length;
+  goToSlide(introSlideIdx);
+}
+
+function startIntroSlides() {
+  clearTimeout(introSlideTimer);
+  goToSlide(0);
+}
+
+function startIntroTeleprompter() {
+  clearTimeout(introTypeTimer);
+  const d = introData[introComm];
+  if (!d) return;
+  introSentIdx = 0;
+  typeSentence();
+}
+
+function typeSentence() {
+  const d = introData[introComm];
+  if (!d || introSentIdx >= d.script.length) return;
+  const el = document.getElementById('introTeleText');
+  const sentence = d.script[introSentIdx];
+  el.textContent = '';
+  let ci = 0;
+  // speak
+  if (!introMuted && window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+    introUtterance = new SpeechSynthesisUtterance(sentence);
+    introUtterance.lang = 'en-US'; introUtterance.rate = 0.82; introUtterance.pitch = 0.9;
+    const voices = window.speechSynthesis.getVoices();
+    const v = voices.find(v=>v.name==='Google US English') || voices.find(v=>v.lang==='en-US') || voices[0];
+    if (v) introUtterance.voice = v;
+    window.speechSynthesis.speak(introUtterance);
+  }
+  function typeChar() {
+    if (!introComm) return;
+    if (ci < sentence.length) {
+      el.textContent += sentence[ci++];
+      introTypeTimer = setTimeout(typeChar, 28);
+    } else {
+      // pause then next sentence
+      introTypeTimer = setTimeout(() => {
+        introSentIdx++;
+        if (introSentIdx < d.script.length) {
+          el.textContent = '';
+          typeSentence();
+        }
+      }, 2200);
+    }
+  }
+  typeChar();
+}
+
+function startIntroProgress() {
+  const d = introData[introComm];
+  if (!d) return;
+  const totalDur = d.script.join(' ').length * 28 + d.script.length * 2200;
+  const pr = document.getElementById('introProgress');
+  pr.style.width = '0%';
+  let pct = 0;
+  function tick() {
+    if (!introComm) return;
+    pct = Math.min(100, pct + 100 / (totalDur / 100));
+    pr.style.width = pct + '%';
+    if (pct < 100) introProgressTimer = setTimeout(tick, 100);
+  }
+  introProgressTimer = setTimeout(tick, 100);
+}
+
+function toggleIntroMute() {
+  introMuted = !introMuted;
+  document.getElementById('introMuteBtn').textContent = introMuted ? 'MUTED' : 'AUDIO';
+  if (introMuted && window.speechSynthesis) window.speechSynthesis.cancel();
+}
+
 </script>
+
+
+
+
+
 </body>
 </html>
